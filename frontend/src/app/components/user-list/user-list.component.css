@@ -1,11 +1,9 @@
-/*  Container Layout */
 .container {
   padding: 24px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/*  Header Styling */
 header {
   display: flex;
   justify-content: space-between;
@@ -33,7 +31,6 @@ header {
   border-radius: 4px;
 }
 
-/* Table Design */
 table {
   width: 100%;
   margin-top: 16px;
@@ -55,7 +52,6 @@ th {
   border-radius: 6px;
 }
 
-/*  Loading Spinner */
 .loading-spinner {
   display: flex;
   flex-direction: column;
@@ -65,7 +61,6 @@ th {
   color: #666;
 }
 
-/*  Empty State Section */
 .no-users {
   display: flex;
   flex-direction: column;
@@ -78,7 +73,6 @@ th {
   text-align: center;
 }
 
-/*  People Icon */
 .no-users mat-icon.empty-icon {
   font-size: 64px;
   width: 64px;
@@ -88,7 +82,6 @@ th {
   margin-bottom: 16px;
 }
 
-/*  Empty Message Text */
 .no-users p {
   font-size: 16px;
   font-weight: 400;
@@ -97,7 +90,6 @@ th {
   max-width: 280px;
 }
 
-/*  Create User Button */
 .create-user-btn {
   display: inline-flex;
   align-items: center;
@@ -125,7 +117,6 @@ th {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
-/*  Button Icon Fixes */
 .create-user-btn .button-icon {
   font-size: 18px;
   height: 18px;
@@ -137,7 +128,6 @@ th {
   margin-left: -4px;
 }
 
-/* Optional: Add some spacing to the bottom of the page */
 footer {
   margin-top: 40px;
   text-align: center;
