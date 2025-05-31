@@ -8,34 +8,34 @@ Step 1: Clone the Repository
 Step 2: Run the Backend
 
  1. Navigate to the backend folder
-    cd backend
+    - cd backend
  2. Create and activate virtual environment
-    python -m venv venv
-    source venv/bin/activate
-    Windows: venv\Scripts\activate
+    - python -m venv venv
+    - source venv/bin/activate
+    - Windows: venv\Scripts\activate
 
  3. Install backend dependencies
-    pip install -r requirements.txt
+    - pip install -r requirements.txt
 
  4. Start the FastAPI server
-    uvicorn main:app --reload
+    - uvicorn main:app --reload
 
  5. Open the GraphQL Playground
-    http://localhost:8000/graphql
+    - http://localhost:8000/graphql
 
 Step 3: Run the Frontend
 
  1. Navigate to the frontend folder
-    cd ../frontend
+    - cd ../frontend
 
  2. Install frontend dependencies
-    npm install
+    - npm install
 
  3. Start the Angular development server
-    ng serve
+    - ng serve
 
  4. Open the application
-    http://localhost:4200
+    - http://localhost:4200
 
 # Features
 
