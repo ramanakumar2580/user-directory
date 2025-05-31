@@ -2,8 +2,8 @@
 A full-stack assignment project built using FastAPI + GraphQL on the backend and Angular (v15+) on the frontend.
 
 Step 1: Clone the Repository
-  git clone https://github.com/ramanakumar2580/user-directory.git
-  cd user-directory
+  1. git clone https://github.com/ramanakumar2580/user-directory.git
+  2. cd user-directory
 
 Step 2: Run the Backend
 
