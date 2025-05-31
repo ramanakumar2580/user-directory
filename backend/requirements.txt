@@ -1,0 +1,5 @@
+fastapi==0.108.0
+strawberry-graphql[fastapi]
+uvicorn==0.27.0
+python-multipart
+pydantic==2.7.1

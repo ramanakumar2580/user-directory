@@ -1,0 +1,16 @@
+<mat-drawer-container autosize>
+  <mat-drawer #drawer mode="side" position="end" class="docs-drawer">
+    <div class="docs-header">
+      <h2>Documentation</h2>
+      <button mat-icon-button (click)="drawer.close()">
+        <mat-icon>close</mat-icon>
+      </button>
+    </div>
+
+    <div class="docs-content" [innerHTML]="content"></div>
+  </mat-drawer>
+
+  <mat-drawer-content>
+    <ng-content></ng-content>
+  </mat-drawer-content>
+</mat-drawer-container>

@@ -1,0 +1,111 @@
+<div class="container">
+  <header>
+    <div class="header-left">
+      <h1>User Directory</h1>
+      <nav class="docs-nav">
+        <button
+          mat-button
+          (click)="setActiveTab('frontend')"
+          [class.active]="activeTab === 'frontend'"
+        >
+          <mat-icon>computer</mat-icon> Frontend
+        </button>
+        <button
+          mat-button
+          (click)="setActiveTab('backend')"
+          [class.active]="activeTab === 'backend'"
+        >
+          <mat-icon>storage</mat-icon> Backend
+        </button>
+        <button
+          mat-button
+          (click)="setActiveTab('api')"
+          [class.active]="activeTab === 'api'"
+        >
+          <mat-icon>api</mat-icon> API Examples
+        </button>
+        <button
+          mat-button
+          (click)="setActiveTab('about')"
+          [class.active]="activeTab === 'about'"
+        >
+          <mat-icon>info</mat-icon> About
+        </button>
+      </nav>
+    </div>
+
+    <div class="header-actions">
+      <button mat-raised-button color="primary" (click)="openCreateDialog()">
+        <mat-icon>add</mat-icon> Add User
+      </button>
+    </div>
+  </header>
+
+  <div *ngIf="loading" class="loading-spinner">
+    <mat-spinner diameter="50"></mat-spinner>
+    <span>Loading users...</span>
+  </div>
+
+  <table
+    *ngIf="!loading && users.length > 0"
+    mat-table
+    [dataSource]="users"
+    class="mat-elevation-z8"
+  >
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef>ID</th>
+      <td mat-cell *matCellDef="let user">{{ user.id }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef>Name</th>
+      <td mat-cell *matCellDef="let user">{{ user.name }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="email">
+      <th mat-header-cell *matHeaderCellDef>Email</th>
+      <td mat-cell *matCellDef="let user">{{ user.email }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="role">
+      <th mat-header-cell *matHeaderCellDef>Role</th>
+      <td mat-cell *matCellDef="let user">{{ user.role }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="actions">
+      <th mat-header-cell *matHeaderCellDef>Actions</th>
+      <td mat-cell *matCellDef="let user">
+        <button
+          mat-icon-button
+          (click)="openEditDialog(user)"
+          matTooltip="Edit"
+        >
+          <mat-icon>edit</mat-icon>
+        </button>
+        <button
+          mat-icon-button
+          (click)="deleteUser(user.id)"
+          matTooltip="Delete"
+          color="warn"
+        >
+          <mat-icon>delete</mat-icon>
+        </button>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+  <div *ngIf="!loading && users.length === 0" class="no-users">
+    <mat-icon class="empty-icon">people_outline</mat-icon>
+    <p class="empty-text">No users found. Create your first user!</p>
+    <button
+      mat-flat-button
+      class="create-user-btn"
+      (click)="openCreateDialog()"
+    >
+      <mat-icon class="button-icon">add</mat-icon>
+      <span>Create User</span>
+    </button>
+  </div>
+</div>

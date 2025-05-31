@@ -1,0 +1,49 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Material Overrides */
+.mat-dialog-container {
+  padding: 24px !important;
+  border-radius: 8px !important;
+}
+
+.mat-raised-button {
+  border-radius: 4px;
+}
+
+/* Snackbar */
+.snackbar-success {
+  background: #4caf50;
+  color: white;
+}
+
+.snackbar-error {
+  background: #f44336;
+  color: white;
+}
+
+/* Table */
+.mat-elevation-z8 {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Utility Classes */
+.full-width {
+  width: 100%;
+}
