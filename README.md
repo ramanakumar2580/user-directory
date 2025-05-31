@@ -3,8 +3,8 @@ A full-stack assignment project built using FastAPI + GraphQL on the backend and
 I Provided Documentation in the website.
 
 Step 1: Clone the Repository
-  1. git clone https://github.com/ramanakumar2580/user-directory.git
-  2. cd user-directory
+  - git clone https://github.com/ramanakumar2580/user-directory.git
+  - cd user-directory
 
 Step 2: Run the Backend
 
