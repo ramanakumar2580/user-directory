@@ -1,5 +1,6 @@
 # User Directory - GraphQL + Angular Assignment
 A full-stack assignment project built using FastAPI + GraphQL on the backend and Angular (v15+) on the frontend.
+I Provided Documentation in the website.
 
 Step 1: Clone the Repository
   1. git clone https://github.com/ramanakumar2580/user-directory.git
@@ -68,4 +69,17 @@ Step 3: Run the Frontend
        }
      }
     }
+# Screenshots
+Add/Edit Form: screenshots/add-edit-form.png
+User Table: screenshots/users-form.png
+Backend: screenshots/users-backend.png
+User Form: screenshots/user-delete.png
+
+# Requirements
+
+- Python 3.9+
+- Node.js 16+
+- Angular CLI (v15+)
+- Ensure the FastAPI server runs on port 8000 and is accessible to the frontend.
+
 
