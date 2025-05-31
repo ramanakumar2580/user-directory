@@ -70,10 +70,18 @@ Step 3: Run the Frontend
      }
     }
 # Screenshots
-Add/Edit Form: screenshots/add-edit-form.png
-User Table: screenshots/users-form.png
-Backend: screenshots/users-backend.png
-User Form: screenshots/user-delete.png
+
+### Add/Edit Form
+![Add/Edit Form](./screenshots/add-edit-form.png)
+
+### User Table
+![User Table](./screenshots/users-form.png)
+
+### Backend (GraphQL)
+![Backend](./screenshots/users-backend.png)
+
+### User Deletion
+![User Form](./screenshots/user-delete.png)
 
 # Requirements
 
