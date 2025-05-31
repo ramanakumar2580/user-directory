@@ -1,10 +1,9 @@
-#User Directory - GraphQL + Angular Assignment
-
+# User Directory - GraphQL + Angular Assignment
 A full-stack assignment project built using FastAPI + GraphQL on the backend and Angular (v15+) on the frontend.
 
 Step 1: Clone the Repository
- git clone https://github.com/ramanakumar2580/user-directory.git
- cd user-directory
+  git clone https://github.com/ramanakumar2580/user-directory.git
+  cd user-directory
 
 Step 2: Run the Backend
 
@@ -40,11 +39,11 @@ Step 3: Run the Frontend
 
 # Features
 
-Display all users in a table
-Add new users using a form
-Edit existing users
-GraphQL queries and mutations using Apollo Client
-Sample GraphQL Operations
+1. Display all users in a table
+2. Add new users using a form
+3. Edit existing users
+4. GraphQL queries and mutations using Apollo Client
+5. Sample GraphQL Operations
 
 # Query: Get All Users
 
