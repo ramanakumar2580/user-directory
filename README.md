@@ -1,4 +1,4 @@
-User Directory - GraphQL + Angular Assignment
+#User Directory - GraphQL + Angular Assignment
 
 A full-stack assignment project built using FastAPI + GraphQL on the backend and Angular (v15+) on the frontend.
 
@@ -13,7 +13,7 @@ Step 2: Run the Backend
  2. Create and activate virtual environment
     python -m venv venv
     source venv/bin/activate
-    # Windows: venv\Scripts\activate
+    Windows: venv\Scripts\activate
 
  3. Install backend dependencies
     pip install -r requirements.txt
